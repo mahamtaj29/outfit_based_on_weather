@@ -13,7 +13,7 @@ const WeatherCard = () => {
   const [temperatureUnit, setTemperatureUnit] = useState("metric");
   const [loading, setLoading] = useState(false);
 
-  const apiKey = "3250caf2959d77ff33ddc5ebcb2c57d4";
+  const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
   const apiUrl = "https://api.openweathermap.org/data/2.5/weather";
   const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast";
 
